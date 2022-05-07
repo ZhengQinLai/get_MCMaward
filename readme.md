@@ -15,3 +15,7 @@
 1.cmd中cd 到当前目录下，执行python mcm.py，下载证书至./certificates
 
 2.执行python ocr.py，输出结果至award.csv
+
+# v2
+
+更新了学校、队员的获取；
