@@ -13,7 +13,7 @@ a.insert(a.shape[1], 'award', 0)
 a=a.set_index("Control Number",drop=False)
 for num in a["Control Number"]:
     path=str(num)+'.png'
-    file_name=str(num)+'.pdf'
+    file_name="./certificates/"+str(num)+'.pdf'
     try:
         doc = fitz.open(file_name)
     except fitz.fitz.FileDataError:

@@ -6,6 +6,6 @@ for num in a["Control Number"]:
     print(str(num)+"下载中")
     pdf = requests.get(url).content  #这里必须用.content而不能用text
     print(str(num)+"写入中")
-    with open(str(num)+".pdf", "wb") as f:
+    with open("./certificates/"+str(num)+".pdf", "wb") as f:
         print(num)
         f.write(pdf)
